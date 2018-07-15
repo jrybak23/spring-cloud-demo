@@ -1,0 +1,11 @@
+server:
+  port: 0
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+spring:
+  application:
+    name: hello-service
