@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: uaa
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+server:
+  port: 7070
