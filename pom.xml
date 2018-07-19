@@ -11,6 +11,13 @@
     <name>spring-cloud-demo</name>
     <description>Demo project for Spring Boot</description>
 
+    <modules>
+        <module>api-gateway</module>
+        <module>service-discovery</module>
+        <module>hello-service</module>
+        <module>hello-world-service</module>
+    </modules>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
