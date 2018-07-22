@@ -3,7 +3,16 @@ spring:
     name: uaa
 eureka:
   client:
-    fetch-registry: true
+    fetch-registry: false
     register-with-eureka: true
 server:
   port: 7070
+
+jwt:
+  certificate:
+    store:
+      file: classpath:/certificate.jks
+      password: scd1234
+    key:
+      alias: scd
+      password: scd1234

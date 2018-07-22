@@ -7,3 +7,19 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: true
+
+security:
+  oauth2:
+    client:
+      id: clientId
+      client-secret: clientSecret
+      scope: openid
+      access-token-uri: http://localhost:7070/oauth/token
+      user-authorization-uri: http://localhost:7070/oauth/authorize
+    resource:
+      jwt:
+        key-uri: http://localhost:7070/oauth/token_key
+zuul:
+  routes:
+    hello-service: /hello-service/**
+    uaa: /uaa/**
